@@ -1,0 +1,3 @@
+void ParseResetVariables();
+void InitializeMathParse();
+

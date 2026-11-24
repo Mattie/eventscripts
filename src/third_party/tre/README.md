@@ -1,0 +1,5 @@
+# TRE vendor notes
+
+This directory contains the library sources from Debian's TRE 0.8.0-5 source package, including Debian's `03-cve-2016-8859` security fix. TRE is distributed under the BSD-style terms in `LICENSE`. When distributing binaries containing this code, include that copyright notice, conditions, and disclaimer with the distribution.
+
+The EventScripts build uses a local byte-only configuration in `config/`, including a compatibility shim for Visual C++ 2005. `lib/tre-match-parallel.c` selects that shim for older MSVC. `lib/tre-match-utils.h` has a local boundary-context adjustment for the EventScripts search adapter. In `config/config.h`, the `snprintf` compatibility macro is restricted to MSVC versions before 2015, whose CRT lacks that function; modern MSVC uses its own declaration. The configuration also uses TRE's built-in ASCII classifier instead of assuming the non-standard `isascii` function is declared in strict C modes. The remaining library sources are the Debian-patched files. The [EventScripts adapter](../../es_regex_adapter.cpp) is compiled separately from TRE.

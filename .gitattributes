@@ -1,0 +1,9 @@
+* text=auto
+*.md text eol=lf
+*.py text eol=lf
+*.ps1 text eol=lf
+*.yaml text eol=lf
+*.txt text eol=lf
+
+# Server fixtures include byte-sensitive resource text and Python 2 encodings.
+tests/backcompat/server/** -text

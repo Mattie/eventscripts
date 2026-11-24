@@ -1,0 +1,40 @@
+EventScripts source notices
+==========================
+
+Copyright and license information for code included in EventScripts.
+See the referenced source and license files for the complete notices.
+
+EventScripts
+  Copyright 2010 Mattie Casper.
+  MIT License; see src/mattie_eventscripts.cpp and the individual source files.
+
+muParser
+  Copyright 2004-2005 Ingo Berg.
+  MIT License; see the notices in src/muParser.
+
+TRE
+  Ville Laurikari and contributors.
+  BSD-style license; see src/third_party/tre/LICENSE.
+  Source distributions must include the copyright notice, license conditions
+  and disclaimer. Binary distributions must reproduce them in the accompanying
+  documentation or other materials.
+  Local changes are described in src/third_party/tre/README.md.
+
+SQLite
+  Public-domain declarations and author notices appear in src/sqlite,
+  including the full-text-search implementation.
+
+Recipient selection
+  Based on the HL2Coding sound tutorial and Valve Corporation's Source
+  recipient-filter interface/design. See src/MRecipientFilter.cpp.
+
+SNIPPETS
+  src/snip_str.h and src/sniptype.h come from Bob Stout's SNIPPETS collection.
+  The string macros credit Bob Stout and Keiichi Nakasato.
+  Archive notice:
+    https://github.com/vonj/snippets.org/blob/1cb6f61fc2352e7928f2f106478b6eef13b1a9d2/snippets.%28c%29
+
+RCON utility
+  [ASY]Zyrain; see src/es_rcon.h.
+  Original source: http://www.asyserver.com/~cstrike/rcon.c
+
